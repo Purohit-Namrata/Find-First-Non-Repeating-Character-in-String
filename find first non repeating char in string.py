@@ -7,7 +7,11 @@ def nonrepeatingchar(x):
         if freq[j]==1:
             return j
         
-    return ("No unique element in string")
+    return -1
 
 st=str(input("Enter string: "))
-print("The first non repeating character in string is ",nonrepeatingchar(st))
+index=nonrepeatingchar(st)
+if index==-1:
+    print("No non repeating character in the string")
+else:
+    print("The first non repeating character in string is ",str(index))
